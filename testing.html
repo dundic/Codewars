@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquam vero, autem eum fuga ducimus, qui deserunt perferendis quae mollitia cupiditate harum tempore sequi dolores impedit fugit aspernatur reiciendis accusamus.
+  <script>
+
+function findShort(s){
+  let arr = s.split(' ');
+  let shortest = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i].length <  shortest.length) {
+      shortest = arr[i];
+    }
+  }
+  return shortest.length;
+}
+
+let string = 'popa dup do';
+
+document.write( 'result is ' +findShort(string));
+  </script>
+</body>
+</html>
