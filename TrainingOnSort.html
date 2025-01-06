@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+ // ПОМОГИТЕ! Джейсон не может найти свой учебник! До даты теста осталось два дня, а учебники Джейсона все разложены! Помогите ему отсортировать список (ArrayList в java), полный учебников по предметам, чтобы он мог подготовиться к тесту. Сортировка НЕ должна быть чувствительна к регистру
+
+ function sorter(textbooks) {
+     return textbooks.sort((a,b)=>{
+         let x=a.toLowerCase();
+         let y=b.toLowerCase();
+         if(x>y){
+             return 1;
+         }
+         else
+             return -1;
+         return 0;
+     })
+ }
+
+ let result = sorter('Algebra', 'History', 'Geometry', 'English')
+ console.log(result)
+
+</script>
+</body>
+</html>
