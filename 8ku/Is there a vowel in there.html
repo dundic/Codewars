@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let array = [100, 111, 97, 1015, 117, 101, 200];
+
+    function isVow(array){
+
+        return array.map(n => {
+            switch (n) {
+                case 97: return 'a';
+                case 101: return 'e';
+                case 105: return 'i';
+                case 111: return 'o';
+                case 117: return 'u';
+                default: return n
+            }
+        }) // your code here
+    }
+
+    console.log(isVow(array))
+</script>
+</body>
+</html>
