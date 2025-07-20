@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum of Multiples</title>
+</head>
+<body>
+<h1>Find the sum of all multiples of n below m
+
+    Keep in Mind
+    n and m are natural numbers (positive integers)
+    m is excluded from the multiples</h1>
+
+<script>
+    function sumMul(n, m) {
+        let sum = 0
+        if (n <= 0 || m <= 0) return 'INVALID'
+        for ( let i = n; i < m; i += n) {
+            sum += i
+        }
+        return sum
+    }
+
+    console.log(sumMul(5, 25))
+</script>
+
+</body>
+</html>
